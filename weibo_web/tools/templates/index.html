@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--author:Sid-->
+
+<head>
+    <title>Weibo-spider</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!--    加载动画-->
+    <link type="text/css" rel="stylesheet" href="/static/css/loading.css" />
+
+    <style>
+        #container {
+            width: 800px;
+            height: 600px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            position: relative;
+            margin: 20px;
+        }
+        
+        #tooltip {
+            position: absolute;
+            width: 250px;
+            height: auto;
+            padding: 10px;
+            background-color: white;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            pointer-events: none;
+        }
+        
+        #tooltip.hidden {
+            display: none;
+        }
+        
+        #tooltip p {
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        
+        #icon {
+            float: left;
+            margin-right: 10px;
+            width: 80px;
+            height: 80px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <p>Hey,it's a weibo spider!</p>
+    <button type="submit" value="search" id="search">search</button>
+    <button type="submit" value="fansearch" id="fansearch">fans</button>
+    <br>
+    <br>
+    <span id="name" style="color: black"></span>
+    <br>
+    <span id="sex" style="color: black"></span>
+    <br>
+    <span id="area" style="color: black"></span>
+    <br>
+    <span id="fan" style="color: black"></span>
+
+    <div id="container">
+        <div id="tooltip" class="hidden">
+            <img src="image/nat.jpg" id="icon">
+            <p>昵称：<span id="name">sid</span></p>
+            <p>性别：<span id="sex">男</span></p>
+            <p>地区：<span id="area">广东</span></p>
+        </div>
+    </div>
+
+    <div id="loading" style="display:none;">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="first_object"></div>
+                <div class="object" id="second_object"></div>
+                <div class="object" id="third_object"></div>
+                <div class="object" id="forth_object"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src='/static/d3/d3.v3.js'></script>
+
+<!--    主要的js函数-->
+<script type="text/javascript" src='/static/main.js'>
+
+
+</script>
+
+</html>
