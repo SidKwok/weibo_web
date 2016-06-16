@@ -22,7 +22,7 @@ I'll show you something:
 
 The center circle is who you are extracting, and the circles around the center is her fans.
 
-When the mouse is over the cicle,you are able to watch some of her infomation, and when you click the circle, you'll be able to get in her homepage.
+When the mouse is over the cicle,you are able to watch some of her information, and when you click the circle, you'll be able to get in her homepage.
 
 ![2](http://img0.ph.126.net/Sy44ylo-t6y0Byesq75vOQ==/6631340444584592007.png)
 
